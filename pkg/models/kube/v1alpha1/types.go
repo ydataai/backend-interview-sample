@@ -10,6 +10,8 @@ type ApplicationSpec struct {
 	ServicePort string `json:"servicePort"`
 }
 
+// +kubebuilder:object:root=true
+
 // Application is the Schema for the applications API
 type Application struct {
 	metav1.TypeMeta   `json:",inline"`
@@ -18,7 +20,7 @@ type Application struct {
 	Spec ApplicationSpec `json:"spec,omitempty"`
 }
 
-// +kubebuilder:resource
+// +kubebuilder:object:root=true
 
 // Applications contains a list of Application
 type ApplicationList struct {
