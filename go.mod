@@ -1,6 +1,6 @@
 module github.com/ydataai/backend-interview-sample
 
-go 1.16
+go 1.19
 
 require (
 	k8s.io/api v0.0.0-20190409021203-6e4e0e4f393b
